@@ -10,7 +10,7 @@ module.exports = {
     path: path.resolve('dist'),
     filename: 'bundle.js'
   },
-  devtool: 'source-map',
+  devtool: 'source-maps',
   module: {
     rules: [
       { test: /\.jsx?$/, loader: 'babel-loader', exclude: /node_modules/ },
@@ -41,7 +41,8 @@ module.exports = {
     hot: true,
     open: true,
     port: 8000,
-    watchContentBase: true
+    watchContentBase: true,
+    historyApiFallback: true
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
