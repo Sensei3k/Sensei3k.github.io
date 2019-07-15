@@ -7,6 +7,7 @@ $mainColor: #0f374f;
 $hero: #9e9e9e;
 $body: #fafafa;
 $lime: #91ff35;
+$black: #1d1f20;
 
 *{
   box-sizing: border-box;
@@ -130,8 +131,14 @@ hr{
 }
 
 .navbar{
-  background-color: black;
+  background-color: $black;
   opacity: 1;
+  .navbar-menu {justify-content: center;}
+  .navbar-start {
+  margin-right: 20px}
+  .navbar-end {
+    margin-left: 20px;
+  }
 }
 
 a.navbar-item {
@@ -142,6 +149,7 @@ a.navbar-item {
   font-family: 'Montserrat', sans-serif;
   transition: .3s ease-in-out;
   cursor: pointer;
+  display: flex;
   &:hover.navbar-item {
     // color: #AB2849;
     color: $lime;
@@ -155,15 +163,21 @@ nav {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  // align-items: center;
   transition: transform 0.5s;
   // background-color: #0f374f;
   background-color: $hero;
 }
 
+.nav-burger {
+  color: white;
+}
+
+
 // ====================================================> HOME
 .hero{
-  background-color: black;
+  // background-color: black;
+  background-color: #1d1f20;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10vw), 50% 100%, 0 calc(100% - 10vw));
   clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10vw), 50% 100%, 0 calc(100% - 10vw));
   font-family: Montserrat;
@@ -196,7 +210,6 @@ div.contanier.mobile {
 
 // =======================================================> ABOUT
 #about{
-  // color: $textColorRed;
   color: $lime;
   font-family: 'Montserrat', sans-serif;
   font-size: 25px;
@@ -231,9 +244,7 @@ div.contanier.mobile {
     display: flex;
     flex-direction: column;
     height: 105px;
-    // color: $textColorRed;
     color: $lime;
-    // color: black;
     padding: 6px;
     width: 105px;
     margin: 0 auto;
@@ -262,8 +273,6 @@ div.contanier.mobile {
 
 // ============================================> projects
 #projects{
-  // background-color: $wS;
-  // border-top: solid #AB2849 8px;
   background-color: $hero;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10vw), 50% 100%, 0 calc(100% - 10vw));
   clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10vw), 50% 100%, 0 calc(100% - 10vw));
@@ -290,10 +299,11 @@ div.contanier.mobile {
 
 // Projects ==================================================== <<<<<
 .projects {
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% + 10vw), 50% 100%, 0 calc(100% + 10vw));
-  clip-path: polygon(0 0, 100% 0, 100% calc(100% + 10vw), 50% 100%, 0 calc(100% + 10vw));
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% + 5vw), 50% 100%, 0 calc(100% + 5vw));
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% + 5vw), 50% 100%, 0 calc(100% + 5vw));
+  margin-bottom: -10vw;
 }
-p.title.is-4 {
+p.title.is-2 {
   margin-bottom: 15px;
   // color: rgb(31,98,142);
   color: $lime;
@@ -458,29 +468,51 @@ p.content-text {
 
 //  ==================================================> Contact
 #contact{
-  // background-color: #0f374f;
-  background-color: black;
-  // border-top: solid #AB2849 8px;
+  background-color: $black;
   display: flex;
+  flex-direction: column;
+  color: whitesmoke;
+  font-size: 88px;
+
+  .contact-info-wrapper {
+    display: flex;
+
+    .column {
+      width: auto;
+      flex: 1;
+      min-width: 0%;
+
+      &.profile-picture {
+        margin-left: 40px;
+        height: 200px;
+      }
+    }
+  }
+
   .contact-icons {
   color: #4a4a4a;
-  padding: 6px;
-  margin: 4px;
-  // font-size: 42px;
+  margin: 40px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
+
   .black-title-contact {
     color: whitesmoke;
     font-size: 88px;
     font-family: Montserrat;
     h2.black-title-contact {
       font-size: 88px;
+      display: flex;
+      flex-direction: column;
+      color: whitesmoke;
+      margin-top: 100px;
     }
   }
 }
 
 #profile-pic {
+  display: flex;
+  flex-direction: column;
   height: 200px;
   border-radius: 100%;
   box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.09);
@@ -488,8 +520,7 @@ p.content-text {
 
 .button {
   background-color: black;
-  // color: #AB2849;
-  color: $lime;
+  color: white;
   margin: 5px;
   font-size: 20px;
   height: 1.7em;
@@ -500,8 +531,8 @@ p.content-text {
   }
 
   &:hover {
-    color: white;
-    background-color: #0f374f;
+    color: $lime;
+    background-color: black;
   }
   .button:focus {
     color: red;
@@ -509,10 +540,15 @@ p.content-text {
 }
 
 }
-.skip {
-  display: none;
-}
 
+.skip {
+  display: flex;
+}
+.details {
+  padding-top: 90px;
+  font-size: 88px;
+  color: $lime;
+}
 
 
 
@@ -532,9 +568,6 @@ p.content-text {
     bottom: -940px;
   }
 
-  #profile-pic{
-    display: none;
-  }
   hr{
     max-width: 300px;
   }
@@ -563,25 +596,33 @@ p.content-text {
     color: $wS;
     font-size: 35px;
     &:hover{
-      background-color: $mainColor;
+      background-color: black;
       color: white;
     }
   }
 }
 
 #menu {
-  background-color: $mainColor;
+  background-color: $black;
   a:hover {
-   background-color: $wS;
+   background-color: $hero;
    max-height: 30em;
  }
 }
 
-// #contact .contact-icons {
-// }
-#contact .button {
+#contact {
+  .button {
   width: 250px;
   font-size: 25px;
+}
+
+.column {
+  flex-direction: row;
+  &.profile-picture {
+    display: none;
+  }
+}
+
 }
 
 div.navbar-brand {
@@ -610,115 +651,163 @@ a.navbar-item {
 
 }
 
-// @media all and (max-width: 420px) {
-//   #scroll-chevron {
-//     bottom: -150px;
-//   }
-// }
-// @media all and (max-width: 320px) {
-//   #scroll-chevron {
-//     bottom: -130px;
-//   }
-// }
+@media all and (max-width: 420px) {
+  #scroll-chevron {
+    bottom: -150px;
+  }
+  // .skip {
+  //   display: none;
+  // }
+}
 
+@media all and (max-width: 320px) {
+  #scroll-chevron {
+    bottom: -130px;
+  }
+}
 
+// =======================================================> Home Animations
+$colors: (
+    background: #1d1f20,
+    // text: #eee
+    text: $lime
+);
 
-// ===============================
+$font: (
+    family: sans-serif,
+    size: 40px,
+    letter-spacing: 0
+);
 
-// #back-to-top {
-//     position: fixed;
-//     bottom: 40px;
-//     right: 40px;
-//     z-index: 9999;
-//     width: 32px;
-//     height: 32px;
-//     text-align: center;
-//     line-height: 30px;
-//     color: black;
-//     cursor: pointer;
-//     border: 0;
-//     border-radius: 2px;
-//     text-decoration: none;
-//     transition: opacity 0.2s ease-out;
-//     opacity: 0;
-// }
+$config: (
+    animated: false,
+    nb-letters: 16,
+    animation-length: 9s,
+    mask-letters: ("0", "1", "2", "3", "4", "5", "6", "7", "8", "9")
 
+);
 
-// * {
-//   -webkit-box-sizing: border-box;
-//   box-sizing: border-box;
-// }
-//
-// /* .gallery {
-//   background: #EEE;
-// } */
-//
-//
-// .flickity-container {
-//   width: 100%;
-//   max-width: 616px;
-//   margin: 0 auto;
-//   position: absolute;
-//   left:0;
-//   right:0;
-//   top:4%;
-//   margin-left:auto;
-//   margin-right:auto;
-//
-// }
-//
-// .gallery-cell {
-//   position: relative;
-//   width: 100%;
-//   background: #8C8;
-//   counter-increment: gallery-cell;
-// }
-//
-// /* cell number */
-// .gallery-cell:before {
-//   display: block;
-//   text-align: center;
-//   content: counter(gallery-cell);
-//   line-height: 200px;
-//   font-size: 80px;
-//   color: white;
-// }
-//
-//
-// /* big buttons, no circle */
-// .flickity-prev-next-button {
-//   width: 100px;
-//   height: 100px;
-//   background: transparent;
-// }
-// /* arrow color */
-// .flickity-prev-next-button .arrow {
-//   fill: white;
-// }
-// .flickity-prev-next-button.no-svg {
-//   color: white;
-// }
-// .flickity-prev-next-button:hover {
-//   background: transparent;
-// }
-// /* hide disabled button */
-// .flickity-prev-next-button:disabled {
-//   display: none;
-// }
-//
-// /* position dots in gallery */
-// .flickity-page-dots {
-//   bottom: 0px;
-// }
-// /* white circles */
-// .flickity-page-dots .dot {
-//   width: 12px;
-//   height: 12px;
-//   opacity: 1;
-//   background: transparent;
-//   border: 2px solid white;
-// }
-// /* fill-in selected dot */
-// .flickity-page-dots .dot.is-selected {
-//   background: white;
-// }
+// ----------------------------------
+
+@function color($value) {
+    @return map-get($colors, $value);
+}
+
+@function font($value) {
+    @return map-get($font, $value);
+}
+
+@function config($value) {
+    @return map-get($config, $value);
+}
+
+@function random-string($list) {
+    $result: null;
+    @for $i from 1 through length($list) {
+        $random: random(length($list));
+        $current: nth($list, $random);
+        $list: remove-nth($list, $random);
+        $result: $result#{$current};
+    }
+    @return $result;
+}
+
+@function remove-nth($list, $index) {
+    $result: ();
+    @for $i from 1 through length($list) {
+        @if $i != $index {
+            $result: append($result, nth($list, $i));
+        }
+    }
+    @return $result;
+}
+
+@mixin respond-to($breakpoint) {
+    @if type-of($breakpoint) == list {
+        @media (min-width: nth($breakpoint, 1)) and (max-width: nth($breakpoint, 2)) {
+            @content;
+        }
+    }
+    @else {
+        @media (max-width: $breakpoint) {
+            @content;
+        }
+    }
+}
+
+// ----------------------------------
+
+body {
+    text-align: center;
+    // background-color: color(background);
+}
+
+.wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    font-size: 0;
+    transform: translate(-50%);
+    p {
+        font-family: font(family);
+        font-size: 40px;
+        font-weight: 500;
+        color: color(text);
+        opacity: 0.8;
+    }
+
+    .letter {
+        width: font(size);
+        display: inline-block;
+        vertical-align: middle;
+        position: relative;
+        overflow: hidden;
+        margin: 0 ceil(font(letter-spacing) / 2);
+        font-family: font(family);
+        font-size: font(size);
+        font-weight: 600;
+        line-height: font(size);
+        text-transform: uppercase;
+        color: color(text);
+        @include respond-to(625px) {
+            //font-size: 16px;
+            //width: 18px;
+        }
+        &:before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            word-break: break-all;
+            background-color: color(background);
+        }
+      }
+    }
+
+// ----------------------------------
+
+@for $i from 1 through config(nb-letters) {
+    $length: length(config(mask-letters));
+    $random: random($length);
+    $steps: $random - 1;
+    $offset: font(size) * $steps * -1;
+    $delay: random(100) / 100;
+      $duration: $steps * (config(animation-length) / $random);
+    .letter:nth-child(#{$i}):before {
+        content: quote(random-string(config(mask-letters)));
+        margin-top: $offset;
+        animation-name: letter#{$i};
+        animation-duration: $duration - ($duration * $delay);
+        animation-delay: $delay * 1s;
+        animation-fill-mode: forwards;
+    }
+    @keyframes letter#{$i} {
+        from {
+            margin-top: $offset;
+        }
+        to {
+            margin-top: font(size);
+        }
+    }
+}

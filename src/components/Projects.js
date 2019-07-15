@@ -45,7 +45,7 @@ class CardShow extends React.Component{
           tech: 'Python | Flask | PostgreSQL | React | Webpack | Ajax | JavaScript (ES6) | HTML5 | Bulma (CSS framework) | SCSS | Heroku',
           description: 'A recreational sport meet up app which allows users to create their own sports events and users can join them.',
           type: 'Full Stack',
-          image: './images/bata_homegif.gif',
+          image: '../images/golden_boot_wide.gif',
           link: 'https://golden-boot.herokuapp.com/#/',
           git: 'https://github.com/Sensei3k/SEI-Project-04'
         }

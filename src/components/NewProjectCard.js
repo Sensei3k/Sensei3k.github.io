@@ -7,7 +7,7 @@ const NewProjectCard = ({ description, tech, title, type, image, link, git }) =>
       <div className=" columns is-centered">
         <div className="column is-two-thirds-tablet is-two-thirds-desktop">
           <div className="column is-one-half project_card">
-            <p className="title is-4">{title}</p>
+            <p className="title is-2">{title}</p>
             <div className="content">
               <div className="content-overlay"></div>
               <img className="content-image" src={image}/>

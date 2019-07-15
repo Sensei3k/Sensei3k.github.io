@@ -9,14 +9,31 @@ class Home extends React.Component{
         <div className="hero-body">
           <div className="container mobile">
 
-            <h1 id="name-home-hero" className="terminal ">
-              <span className="brackets">{'<'}</span>
-              <span>{'Detola Oyawoye /'}</span>
-              <span className="brackets">{'>'}</span>
-            </h1>
-            <hr />
-            <h2 id="logo-sub" className="anim-typewriter terminal"> Full-Stack Web Developer</h2>
-            {/* <img src="../images/python_logo.svg"></img> */}
+            {/* <h1 id="name-home-hero" className="terminal "> */}
+            {/* <span className="brackets">{'<'}</span> */}
+            {/* <span>Detola Oyawoye</span> */}
+            {/* <span className="brackets">{'>'}</span> */}
+            <div className="wrapper">
+              <div className="letters">
+                <span className="letter">D</span>
+                <span className="letter">e</span>
+                <span className="letter">t</span>
+                <span className="letter">o</span>
+                <span className="letter">l</span>
+                <span className="letter">a</span>
+                <span className="letter"> </span>
+                <span className="letter">O</span>
+                <span className="letter">y</span>
+                <span className="letter">a</span>
+                <span className="letter">w</span>
+                <span className="letter">o</span>
+                <span className="letter">y</span>
+                <span className="letter">e</span>
+              </div>
+              <p>Full Stack Web Developer</p>
+            </div>
+            {/* <hr />
+            <h2 id="logo-sub" className="anim-typewriter terminal"> Full-Stack Web Developer</h2> */}
             <a href="#about">
               <div id="scroll-chevron" className="fade-in bounce">
                 <FontAwesomeIcon icon={faChevronDown} />
