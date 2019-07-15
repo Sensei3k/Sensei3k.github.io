@@ -13,9 +13,9 @@ class Contact extends React.Component{
           <div className="columns">
             <div className="column">
 
-              <h2 className="black-title">contact.</h2>
+              <h2 className="black-title-contact">contact.</h2>
 
-              <div className="columns is-vcentered has-text-centered" >
+              <div className="column is-vcentered has-text-centered" >
                 <div className="column contact-icons">
 
                   <a className="button" href="mailto:oyawoye.ade@gmail.com">

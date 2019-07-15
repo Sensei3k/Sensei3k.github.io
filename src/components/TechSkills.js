@@ -7,9 +7,9 @@ class TechSkills extends React.Component {
         <div  className="section skills ">
           <div   id="about" className="container">
             <div className="columns is-multiline ">
-              <div className="column is-half-desktop is-full-tablet">
+              <div className="column is-full-desktop is-full-tablet">
 
-                <h2 className="black-title is-full-tablet">tech & frameworks.</h2>
+                <h2 className="black-title is-full-tablet is-multiline is-half-desktop">tech & frameworks.</h2>
 
                 <ul className="tech-list is-multiline">
                   <li >
@@ -94,13 +94,17 @@ class TechSkills extends React.Component {
                   </li>
                 </ul>
               </div>
-              <div className="column is-half-desktop is-full-tablet">
+              <div className="column is-full-desktop is-full-tablet">
                 <h2 className="black-title"> experience.</h2>
-                <h3> General Assembly.</h3>
+                <h3> General Assembly</h3>
                 <h4>Software Engineering Immersive</h4>
                 <br />
                 <p>
-                  My experience at the GA Software Engineering Immersive Program was extremely instrumental to my successful transition into the core of tech. Coding has become the heart of my trade being a Software Engineer. The practicality of the programming harnessed my problem-solving skills with my technical skills. This gives me the required confidence for solving complex problems with clients and organisations as my business skills and people skills have also improved.
+                  My experience at the GA Software Engineering Immersive Program was extremely instrumental to my successful transition into the core of tech. Coding has become the heart of my trade being a Software Engineer.
+                </p>
+                <br />
+                <p>
+                   The practicality of the programming harnessed my problem-solving skills with my technical skills. This gives me the required confidence for solving complex problems with clients and organisations as my business skills and people skills have also improved.
                 </p>
               </div>
             </div>

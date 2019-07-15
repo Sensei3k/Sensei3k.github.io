@@ -22,9 +22,9 @@ class Navbar extends React.Component {
       <nav className="navbar is-fixed-top" role="navigation" aria-label="main navigation">
         <div className="container">
           <div className="navbar-brand">
-            <div className="logo">
+            {/* <div className="logo">
               <div>D.O</div>
-            </div>
+            </div> */}
             <a
               role="button"
               // className={`navbar-burger${this.state.active ? ' is-active' : ''}`}

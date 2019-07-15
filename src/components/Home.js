@@ -15,7 +15,7 @@ class Home extends React.Component{
               <span className="brackets">{'>'}</span>
             </h1>
             <hr />
-            <h2 id="logo-sub" className="anim-typewriter terminal"> {'>'} Full-Stack Web Developer</h2>
+            <h2 id="logo-sub" className="anim-typewriter terminal"> Full-Stack Web Developer</h2>
             {/* <img src="../images/python_logo.svg"></img> */}
             <a href="#about">
               <div id="scroll-chevron" className="fade-in bounce">
