@@ -41,7 +41,7 @@ class CardShow extends React.Component{
         },
         {
           id: '4',
-          title: 'Bata Wura',
+          title: 'Golden Boot',
           tech: 'Python | Flask | PostgreSQL | React | Webpack | Ajax | JavaScript (ES6) | HTML5 | Bulma (CSS framework) | SCSS | Heroku',
           description: 'A recreational sport meet up app which allows users to create their own sports events and users can join them.',
           type: 'Full Stack',
